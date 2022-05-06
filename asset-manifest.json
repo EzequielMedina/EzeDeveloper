@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/EzeDeveloper/static/css/main.7270cb06.chunk.css",
+    "main.js": "/EzeDeveloper/static/js/main.a59383fc.chunk.js",
+    "main.js.map": "/EzeDeveloper/static/js/main.a59383fc.chunk.js.map",
+    "runtime-main.js": "/EzeDeveloper/static/js/runtime-main.08954d80.js",
+    "runtime-main.js.map": "/EzeDeveloper/static/js/runtime-main.08954d80.js.map",
+    "static/js/2.d494a02e.chunk.js": "/EzeDeveloper/static/js/2.d494a02e.chunk.js",
+    "static/js/2.d494a02e.chunk.js.map": "/EzeDeveloper/static/js/2.d494a02e.chunk.js.map",
+    "static/js/3.d8717fe8.chunk.js": "/EzeDeveloper/static/js/3.d8717fe8.chunk.js",
+    "static/js/3.d8717fe8.chunk.js.map": "/EzeDeveloper/static/js/3.d8717fe8.chunk.js.map",
+    "index.html": "/EzeDeveloper/index.html",
+    "static/css/main.7270cb06.chunk.css.map": "/EzeDeveloper/static/css/main.7270cb06.chunk.css.map",
+    "static/js/2.d494a02e.chunk.js.LICENSE.txt": "/EzeDeveloper/static/js/2.d494a02e.chunk.js.LICENSE.txt",
+    "static/media/Bit.702cf061.jpg": "/EzeDeveloper/static/media/Bit.702cf061.jpg",
+    "static/media/CalculadoraJS.1617d83a.jpg": "/EzeDeveloper/static/media/CalculadoraJS.1617d83a.jpg",
+    "static/media/ComuniCar.c1e2c706.jpg": "/EzeDeveloper/static/media/ComuniCar.c1e2c706.jpg",
+    "static/media/GitHub.1b136cd1.png": "/EzeDeveloper/static/media/GitHub.1b136cd1.png",
+    "static/media/Medina_Ezequiel_CV_2022.fcbc9947.pdf": "/EzeDeveloper/static/media/Medina_Ezequiel_CV_2022.fcbc9947.pdf",
+    "static/media/appFluter2.2dc3388a.jpeg": "/EzeDeveloper/static/media/appFluter2.2dc3388a.jpeg",
+    "static/media/css3.5227db3a.png": "/EzeDeveloper/static/media/css3.5227db3a.png",
+    "static/media/flutter.c01689b8.png": "/EzeDeveloper/static/media/flutter.c01689b8.png",
+    "static/media/html5.b7d94634.png": "/EzeDeveloper/static/media/html5.b7d94634.png",
+    "static/media/img_30298_programhtml.1a79a6f9.jpg": "/EzeDeveloper/static/media/img_30298_programhtml.1a79a6f9.jpg",
+    "static/media/jQuery.6854c2dd.png": "/EzeDeveloper/static/media/jQuery.6854c2dd.png",
+    "static/media/js.a33dadb0.png": "/EzeDeveloper/static/media/js.a33dadb0.png",
+    "static/media/login.43d4d012.png": "/EzeDeveloper/static/media/login.43d4d012.png",
+    "static/media/yo_adobespark.2d2f94f7.png": "/EzeDeveloper/static/media/yo_adobespark.2d2f94f7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08954d80.js",
+    "static/js/2.d494a02e.chunk.js",
+    "static/css/main.7270cb06.chunk.css",
+    "static/js/main.a59383fc.chunk.js"
+  ]
+}
