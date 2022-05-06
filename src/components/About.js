@@ -2,10 +2,11 @@ import React from 'react';
 import { Card, makeStyles, Typography, CardMedia, CardContent, CardActions, Button } from '@material-ui/core';
 import ezequiel from "../img/yo_adobespark.png";
 import TypeWriterEffect from "react-typewriter-effect";
-import Cv from "../assents/Medina_Ezequiel_CV_2020.pdf";
+import Cv from "../assents/Medina_Ezequiel_CV_2022.pdf";
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import SchoolTwoToneIcon from '@material-ui/icons/SchoolTwoTone';
+import CodeIcon from '@material-ui/icons/Code';
 const About = ({title,id, gray}) => {
     const classes = useStyles();
     return(
@@ -23,7 +24,7 @@ const About = ({title,id, gray}) => {
                     typeSpeed={100}
                   />
                   <TypeWriterEffect
-                    text="I'm a programmer"
+                    text="junior developer"
                     textStyle={{fontSize: "1.2rem", fontWeight: "500px", color:"#000"}}
                     startDelay={2500}
                     cursorColor="black"
@@ -35,7 +36,9 @@ const About = ({title,id, gray}) => {
                   <Typography variant="h6">
                     <WhatsAppIcon></WhatsAppIcon> 3512504207<br></br>
                     <InstagramIcon></InstagramIcon> Ezemedinaaa <br></br>
-                    <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion
+                    <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion<br></br>
+                    <CodeIcon></CodeIcon> Empleo: Bit S.A, <br></br>04/10/2021 - Actualidad
+                    <br></br>
                   </Typography>
 
                 </CardContent>
@@ -53,7 +56,7 @@ const About = ({title,id, gray}) => {
               <Typography variant="h9" className={classes.datos} >
                     <WhatsAppIcon></WhatsAppIcon> 3512504207<br></br>
                     <InstagramIcon></InstagramIcon> Ezemedinaaa <br></br>
-                    <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion
+                    <SchoolTwoToneIcon></SchoolTwoToneIcon> Estudiante en Tecnicatura en programacion <br></br>                   
                   </Typography>
             </div>
         </div>

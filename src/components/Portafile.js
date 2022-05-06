@@ -13,7 +13,7 @@ const Portafile = ({title,id, gray}) => {
             <Typography variant="h3"className={classes.titulo} >{title}</Typography>
               <Grid container className={classes.grid}>
                 {
-                  mockData.map(({title, image, repositorio}, index)=>{
+                  mockData.map(({title, image, repositorio, video}, index)=>{
                     
                     return (
                       <Grid item key={index} xs={12} ms={6} md={4}>
@@ -26,6 +26,7 @@ const Portafile = ({title,id, gray}) => {
                                 </Link>             
                             </Button>
                           </CardContent>
+                            <Typography variant="h6"className={classes.tecnologias} >{video}</Typography>
                         </Card>
                       </Grid>
                     );
@@ -86,6 +87,9 @@ const useStyles = makeStyles((theme) => ({
     },
     titulo:{
       textShadow: "6px 5px 10px #555"
+    },
+    tecnologias:{
+      textAlign: "center",
     }
   }))
 

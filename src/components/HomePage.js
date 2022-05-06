@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import { IconButton, Link, makeStyles, Typography } from '@material-ui/core';
+import { IconButton, makeStyles, Typography } from '@material-ui/core';
 import imagen from "../img/img_30298_programhtml.jpg";
 import '../index.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -24,7 +24,7 @@ const HomePage = ({title,id}) => {
                 </Typography>
                 
                 <Typography variant="h4"  class="textoheader">
-                <h3>I am a programmer</h3>
+                <h3>junior developer</h3>
                 </Typography>
               
                 <div>

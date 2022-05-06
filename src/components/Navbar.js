@@ -1,8 +1,7 @@
 import React from "react";
 import { AppBar, Divider, Drawer, IconButton, List, ListItem, Toolbar, ListItemIcon } from "@material-ui/core";
-import logo from "../img/LogoMakr.png";
 import { makeStyles } from "@material-ui/core";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import InfoTwoToneIcon from "@material-ui/icons/InfoTwoTone";
 import HomeTwoToneIcon from "@material-ui/icons/HomeTwoTone";
 import WorkIconTwoToneIcon from "@material-ui/icons/WorkTwoTone";
@@ -48,14 +47,11 @@ const Navbar = () => {
       icon: <ContactMailTwoToneIcon fontSize="large" />,
     },
   ];
-  const scrolltotop =()=>{
-    scroll.scrollToTop()
-  }
   return (
-    <>
+    <div>
       <AppBar position="sticky" className={classes.root}>
         <Toolbar className={classes.toolbar}>
-          <img src={logo} className={classes.logo} alt="Logo" onClick={scrolltotop}/>
+
           <List className={classes.menu}>
             {links.map(({ id, text }, index) => (
               <Link
@@ -71,38 +67,38 @@ const Navbar = () => {
               </Link>
             ))}
           </List>
-          <IconButton edge="end" className={classes.menuButton} onClick={()=>setOpen(!open)}>
+          <IconButton edge="end" className={classes.menuButton} onClick={() => setOpen(!open)}>
             <MenuIcon fontSize="large" />
           </IconButton>
         </Toolbar>
       </AppBar>
-      <Drawer anchor="left" open={open} onClase={()=>setOpen(false)} className={classes.drawer}>
-          <IconButton  onClick={()=>setOpen(false)} className={classes.cancelIcon}>
-            <CancelIcon fontSize="large"/>            
-          </IconButton>
-          <Divider></Divider>
-          {links.map(({ id, text, icon }, index) => (
-              <Link
-                className={classes.sidebar}
-                key={index}
-                to={id}
-                spy={true}
-                activeClass="active"
-                smooth={true}
-                duration={500}
-                offset={-70}
-              >
-                <ListItem component="h5">
-                  <span>
-                    <ListItemIcon>
-                        {icon}
-                    </ListItemIcon>
-                  </span>{text}
-                </ListItem>
-              </Link>
-            ))}
+      <Drawer anchor="left" open={open} onClase={() => setOpen(false)} className={classes.drawer}>
+        <IconButton onClick={() => setOpen(false)} className={classes.cancelIcon}>
+          <CancelIcon fontSize="large" />
+        </IconButton>
+        <Divider></Divider>
+        {links.map(({ id, text, icon }, index) => (
+          <Link
+            className={classes.sidebar}
+            key={index}
+            to={id}
+            spy={true}
+            activeClass="active"
+            smooth={true}
+            duration={500}
+            offset={-70}
+          >
+            <ListItem component="h5">
+              <span>
+                <ListItemIcon>
+                  {icon}
+                </ListItemIcon>
+              </span>{text}
+            </ListItem>
+          </Link>
+        ))}
       </Drawer>
-    </>
+    </div>
   );
 };
 const useStyles = makeStyles((theme) => ({
@@ -117,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     diplay: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    "& img":{
+    "& img": {
       cursor: "pointer"
     }
   },
@@ -157,41 +153,41 @@ const useStyles = makeStyles((theme) => ({
       right: 10,
     },
   },
-  drawer:{
-    opacity:"0.8",
+  drawer: {
+    opacity: "0.8",
     background: "linear-gradient(to right, #4286f4c0, #373b44b2)",
   },
-  sidebar:{
-  
-    paddingTop:15,
+  sidebar: {
+
+    paddingTop: 15,
     width: "40vw",
-    [theme.breakpoints.down("sm")]:{
+    [theme.breakpoints.down("sm")]: {
       width: "60vw",
     },
-    "& h5":{
-      margin:theme.spacing(3, 0, 0, 4),
+    "& h5": {
+      margin: theme.spacing(3, 0, 0, 4),
       fontSize: "1.3rem",
       color: "#333",
       fontWeight: "bold",
       transitionpProperty: "color",
       transitionDuration: "1s",
     },
-    "& h5:hover":{
+    "& h5:hover": {
       cursor: "pointer",
       color: "#00f",
       borderBotom: "3px solid #fff",
       textDecoration: "underline",
     },
-    
+
   },
-  cancelIcon:{
+  cancelIcon: {
     color: "red",
     position: "absolute",
     top: 0,
     right: 10,
-    
-    
-    
+
+
+
   },
 }));
 

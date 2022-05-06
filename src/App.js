@@ -5,9 +5,7 @@ import HomePage from "./components/HomePage";
 import Navbar from"./components/Navbar";
 import Portafile from "./components/Portafile";
 import Skills from "./components/Skills";
-import { Scene } from "./components";
-import World from "./components/Scene/World";
-import {Technolofies} from "./components/Technolofies.js"
+
 
 function App() {
   const classes = useStyles();
@@ -17,13 +15,8 @@ function App() {
       <HomePage title="Alexis Ezequiel Medina" id="HomePage"></HomePage>
       <Portafile title="My works"id="PortafilePage" gray={false}></Portafile>
       <Skills title="Skills"id="SkillsPage" gray={true}></Skills>
-      <About title="About me" id="AboutPage" gray={false}></About>
-      
-      <Contact title="Contact me" id="ContactPage" gray={true}></Contact>
-      <Technolofies></Technolofies>
-      
-      
-      
+      <About title="About me" id="AboutPage" gray={false}></About>      
+      <Contact title="Contact me" id="ContactPage" gray={true}></Contact>    
     </div>
   );
 }
