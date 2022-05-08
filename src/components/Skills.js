@@ -32,7 +32,11 @@ const useStyles = makeStyles((theme) => ({
     top: "5%",
     position: "absolute",
     left: "44%",
-    zIndex: "9999"
+    zIndex: "9999",
+    [theme.breakpoints.down("sm")]: {
+      left: "34%",
+
+  }
   },
   skills: {
     position: "absolute",

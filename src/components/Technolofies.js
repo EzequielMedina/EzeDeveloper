@@ -193,6 +193,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#f2f2f2",
         left: "10%",
         top: "19%",
+        [theme.breakpoints.down("sm")]: {
+            display: "none",
+      
+        }
     },
     skills2: {
         position: "absolute",
@@ -200,6 +204,10 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#f2f2f2",
         right: "14%",
         top: "20%",
+        [theme.breakpoints.down("sm")]: {
+            display: "none",
+      
+        }
     },
     imagen:{
         display: "flex",
